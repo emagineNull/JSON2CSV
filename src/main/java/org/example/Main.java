@@ -15,15 +15,9 @@ public class Main {
 
         in = JsonInput.readAndStore(in, scanner);
 
-        String listString = String.join(", ", in);
+        String listString = String.join("\n", in);
         assertTrue(JsonInput.isValid(listString));
 
-        String newStr = "";
-        newStr = listString.replace("{","");
-        newStr = newStr.replaceAll("}","");
-
-        // TODO: stuff
-        System.out.println(newStr);
-
+        CSVOutput.printCSV(listString);
     }
 }
