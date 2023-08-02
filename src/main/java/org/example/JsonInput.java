@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JsonInput {
+    // Reads and stores the input text
     public static ArrayList<String> readAndStore(ArrayList<String> in, Scanner scanner) {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -23,6 +24,7 @@ public class JsonInput {
         return in;
     }
 
+    // Checks whether the input is a valid JSON String
     public static boolean isValid(String json) {
         try {
             new JSONObject(json);
