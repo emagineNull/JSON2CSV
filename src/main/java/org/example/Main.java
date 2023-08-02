@@ -22,6 +22,8 @@ public class Main {
         String newStr = "";
         newStr = listString.replace("{","");
         newStr = newStr.replaceAll("}","");
+
+        // TODO: stuff
         System.out.println(newStr);
 
     }
